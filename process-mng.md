@@ -24,8 +24,8 @@
 __vfork__ 重要用于立即调用exec系列加载新程序的情况.
 __由于fork使用了copy-on-write 技术vfork不在有优势,应避免使用__. 
   3. **clone** 产生线程.
-  4. ### do_fork_
-上面的三个系统调用都使用do_fork实现
+  4. do\_fork
+上面的三个系统调用都使用do\_fork实现
 
 
 ### COW copy-on-write
