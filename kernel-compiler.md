@@ -73,6 +73,17 @@ update-grub
      Makefile 文件中添加 obj-$(CONFIG_RTL8192CU) += rtl8192cu/
      Kconfig  文件中添加 source "drivers/net/wireless/rtl8192cu/Kconfig"
 
+### 更新内核到新的版本
+  需要使用当前版本的config文件
+  得到新版本的源码
+  更新新的选项
+    make oldconfig 
+    保证 .config 是旧的config文件
+
+    或者 make silentoldconfig 
+      和oldconfig相似，但是不会打印出配置选项
+
+
 
 
 ### /boot file详解 
